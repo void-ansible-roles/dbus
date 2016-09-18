@@ -1,0 +1,6 @@
+---
+- name: Install dbus
+  xbps: pkg=dbus state=present
+
+- name: Enable dbus
+  file: src=/etc/sv/dbus dest=/var/service/dbus state=link
